@@ -1,10 +1,14 @@
 body{
     height: 4000px;
-    background-color ;
+    
 }
 @font-face {
     font-family: day;
-    src: url(../font/DaysOne-Regular.ttf);
+    src: url(../font/font-1/DaysOne-Regular.ttf);
+}
+@font-face {
+    font-family: cha;
+    src: url(../font/font-2/Chakra_Petch/ChakraPetch-Bold.ttf);
 }
 .green{
     color: 
@@ -13,9 +17,24 @@ rgb(203, 254, 28);
 .bg-green{
     background-color:rgb(203, 254, 28) ;
 }
+.but-border{
+    border: 2px solid rgb(203, 254, 28);
+}
 .font{
     font-family: day;
     font-weight: 700;
+}
+.fw-but{
+    font-weight: 700;
+    font-size: 12px;
+}
+.font-size{
+    font-size: 13.5px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.gray-p{
+    color: rgb(190, 188, 188);
 }
 .hover{
     color: rgb(203, 254, 28);
@@ -35,10 +54,11 @@ color: rgb(203, 254, 28);
 .inset{
     inset: 0;
 }
-.border-b{
- 
+.h1{
+font-family: day;
+font-size:32px;
+font-weight: 700;
 }
-
 
 .card{
     width:450px;
@@ -53,12 +73,40 @@ color: rgb(203, 254, 28);
     object-fit: cover;
     object-position: center;
 }
+.bor{
+    border: 1px solid rgb(87, 85, 85);
+}
 .play{
-    bottom: 0;
+
+    bottom: -10px;
     left: 0;
 }
+.h2{
+    font-family: cha;
+    font-weight: 700 ;
+    font-size: 14px;
+    display: flex;
+justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.h2::after{
+content:'';
+width: 30px;
+height: 2px;
+background:linear-gradient(to left, black,rgb(222, 255, 33),rgb(222, 255, 33));
+display: inline-block;
 
 
+}
+.h2::before{
+    content:'';
+   
+width: 30px;
+height: 2px;
+background:linear-gradient(to right, black,rgb(222, 255, 33),rgb(222, 255, 33));
+display: inline-block;
+}
 
 
 
@@ -70,16 +118,65 @@ color: rgb(203, 254, 28);
 }
 .sss{
     width: 100%;
-    height: ;
+  
 }
 .back{
     height: 100vh;
-   
     background-image: url(../img/hero-bg.jpg);
     background-position: center;
     background-size: cover;
 }
 
+.ee{
+    overflow: hidden;
+    height: 350px;
+}
+.ee img{
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@media (min-width: 500px){
+.width-1{
+    width: 100%;
+}
+}
 @media (min-width: 990px){
+    .but button  {
+        padding-block: 20px !important;
+        
+    }
+    .width-2{
+        width: 30%;
+    }
+    .lorem h1{
+        font-size: 60px;
+    }
+    .gray-p{
+        font-size: 16px;
+        text-align: start;
+    }
+    .card{
+          width:450px;
+    height: 350px;
+    }
+}
+@media (min-width: 1280px){
+.card{
+ width: 550px;
+ height: 350px;
+}
+}
+@media (min-width: 1500px){
+    .card{
+        width: 600px;   
+    }
+    .play{
+        left: 50px;
+    }
 
 }
+@media (min-width: 500px){}
